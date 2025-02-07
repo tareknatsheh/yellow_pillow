@@ -17,15 +17,6 @@
         "tsConfigPath": "libs/common/tsconfig.lib.json"
       }
     },
-    "yellow_pillow": {
-      "type": "application",
-      "root": "apps/yellow_pillow",
-      "entryFile": "main",
-      "sourceRoot": "apps/yellow_pillow/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/yellow_pillow/tsconfig.app.json"
-      }
-    },
     "reservations": {
       "type": "application",
       "root": "apps/reservations",

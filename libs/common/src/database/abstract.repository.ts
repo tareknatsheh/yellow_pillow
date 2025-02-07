@@ -50,6 +50,7 @@ export abstract class AbstractRepository<TDocument extends AbstractDocument> {
     const deletedDocument = await this.model
       .findOneAndDelete(filterQuery)
       .lean<TDocument>(true);
+
     if (!deletedDocument) {
       this.logger.warn('Document not found with filter', filterQuery);
       throw new NotFoundException('Document not found');
